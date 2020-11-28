@@ -1,6 +1,6 @@
 import pytest
 
-from chatbot_facto.users.models import User
+from chatbot_unicatolica.users.models import User
 
 pytestmark = pytest.mark.django_db
 

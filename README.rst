@@ -1,4 +1,4 @@
-chatbot-facto
+chatbot-unicatolica
 =============
 
 Um chatbot simples
@@ -39,7 +39,7 @@ Running type checks with mypy:
 
 ::
 
-  $ mypy chatbot_facto
+  $ mypy chatbot_unicatolica
 
 Test coverage
 ^^^^^^^^^^^^^

@@ -1,7 +1,7 @@
 import pytest
 
-from chatbot_facto.users.forms import UserCreationForm
-from chatbot_facto.users.tests.factories import UserFactory
+from chatbot_unicatolica.users.forms import UserCreationForm
+from chatbot_unicatolica.users.tests.factories import UserFactory
 
 pytestmark = pytest.mark.django_db
 

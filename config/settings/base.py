@@ -6,8 +6,8 @@ from pathlib import Path
 import environ
 
 ROOT_DIR = Path(__file__).resolve(strict=True).parent.parent.parent
-# chatbot_facto/
-APPS_DIR = ROOT_DIR / "chatbot_facto"
+# chatbot_unicatolica/
+APPS_DIR = ROOT_DIR / "chatbot_unicatolica"
 env = environ.Env()
 
 ENV_FILE = ROOT_DIR / ".env"
@@ -42,7 +42,7 @@ LOCALE_PATHS = [str(ROOT_DIR / "locale")]
 # https://docs.djangoproject.com/en/dev/ref/settings/#databases
 
 DATABASES = {
-    "default": env.db("DATABASE_URL", default="postgres://localhost/chatbot_facto")
+    "default": env.db("DATABASE_URL", default="postgres://localhost/chatbot_unicatolica")
 }
 DATABASES["default"]["ATOMIC_REQUESTS"] = True
 
@@ -74,7 +74,7 @@ THIRD_PARTY_APPS = [
 ]
 
 LOCAL_APPS = [
-    "chatbot_facto.users.apps.UsersConfig",
+    "chatbot_unicatolica.users.apps.UsersConfig",
     # Your stuff: custom apps go here
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
@@ -83,7 +83,7 @@ INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 # MIGRATIONS
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#migration-modules
-MIGRATION_MODULES = {"sites": "chatbot_facto.contrib.sites.migrations"}
+MIGRATION_MODULES = {"sites": "chatbot_unicatolica.contrib.sites.migrations"}
 
 # AUTHENTICATION
 # ------------------------------------------------------------------------------
@@ -182,7 +182,7 @@ TEMPLATES = [
                 "django.template.context_processors.static",
                 "django.template.context_processors.tz",
                 "django.contrib.messages.context_processors.messages",
-                "chatbot_facto.utils.context_processors.settings_context",
+                "chatbot_unicatolica.utils.context_processors.settings_context",
             ],
         },
     }
@@ -263,9 +263,9 @@ ACCOUNT_EMAIL_REQUIRED = True
 # https://django-allauth.readthedocs.io/en/latest/configuration.html
 ACCOUNT_EMAIL_VERIFICATION = "mandatory"
 # https://django-allauth.readthedocs.io/en/latest/configuration.html
-ACCOUNT_ADAPTER = "chatbot_facto.users.adapters.AccountAdapter"
+ACCOUNT_ADAPTER = "chatbot_unicatolica.users.adapters.AccountAdapter"
 # https://django-allauth.readthedocs.io/en/latest/configuration.html
-SOCIALACCOUNT_ADAPTER = "chatbot_facto.users.adapters.SocialAccountAdapter"
+SOCIALACCOUNT_ADAPTER = "chatbot_unicatolica.users.adapters.SocialAccountAdapter"
 
 
 # Your stuff...

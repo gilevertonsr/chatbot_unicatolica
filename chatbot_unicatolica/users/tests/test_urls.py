@@ -1,7 +1,7 @@
 import pytest
 from django.urls import resolve, reverse
 
-from chatbot_facto.users.models import User
+from chatbot_unicatolica.users.models import User
 
 pytestmark = pytest.mark.django_db
 

@@ -1,6 +1,6 @@
 from django.urls import path
 
-from chatbot_facto.users.views import (
+from chatbot_unicatolica.users.views import (
     user_detail_view,
     user_redirect_view,
     user_update_view,

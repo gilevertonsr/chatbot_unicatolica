@@ -10,7 +10,7 @@ if "%SPHINXBUILD%" == "" (
 )
 set SOURCEDIR=_source
 set BUILDDIR=_build
-set APP=..\chatbot_facto
+set APP=..\chatbot_unicatolica
 
 if "%1" == "" goto help
 

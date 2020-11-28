@@ -26,7 +26,7 @@ django.setup()
 
 # -- Project information -----------------------------------------------------
 
-project = "chatbot-facto"
+project = "chatbot-unicatolica"
 copyright = """2020, Gil Everson"""
 author = "Gil Everson"
 

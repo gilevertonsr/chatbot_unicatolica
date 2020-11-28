@@ -3,9 +3,9 @@ from django.contrib.auth.models import AnonymousUser
 from django.http.response import Http404
 from django.test import RequestFactory
 
-from chatbot_facto.users.models import User
-from chatbot_facto.users.tests.factories import UserFactory
-from chatbot_facto.users.views import (
+from chatbot_unicatolica.users.models import User
+from chatbot_unicatolica.users.tests.factories import UserFactory
+from chatbot_unicatolica.users.views import (
     UserRedirectView,
     UserUpdateView,
     user_detail_view,
